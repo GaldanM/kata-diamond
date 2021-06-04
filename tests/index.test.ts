@@ -16,4 +16,12 @@ describe("diamond", () => {
     const expectedResult = [" A", "B B", " A"].join("\n");
     expect(result).toStrictEqual(expectedResult);
   });
+  it("c should work", () => {
+    const input = "C";
+
+    const result = diamond(input);
+
+    const expectedResult = ["  A", " B B", "C   C", " B B", "  A"].join("\n");
+    expect(result).toStrictEqual(expectedResult);
+  });
 });
